@@ -52,19 +52,21 @@ public class StudentaiND {
         stud.add(kestutis);
 
         for (int i = 0; i < stud.size(); i++) {
-            stud.get(i).addPazymiusILista(stud.get(i).getPazymys());
-            for (int j = 1; j < 5; j++) {
+            for (int j = 1; j <= 5; j++) {
                 stud.get(i).addPazymiusILista(stud.get(i).getPazymys());
             }
         }
         System.out.println(stud);
         
         for (int j = 1; j <= 10; j++) {
-            System.out.println(j);
+            System.out.println(" ");
+            System.out.println(j + "-tą turi: ");
+            System.out.println(" ");
             for (int i = 0; i < stud.size(); i++) {
                 if (stud.get(i).getPavarde() == stud.get(i).arTuriPazymi(j)) {
                     map.put(j, stud.get(i).getPavarde());
-                    System.out.println(map.get(j));                    
+                    System.out.println(map.get(j));  
+                    
                 }                
             }                        
         }
