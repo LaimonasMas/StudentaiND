@@ -21,35 +21,21 @@ public class StudentaiND {
         ArrayList<Studentas> stud = new ArrayList();
 
         Map map = new HashMap();
-        Studentas simonasG = new Studentas("Simonas", "Gentvilas");
-        Studentas dainius = new Studentas("Dainius", "Kreivys");
-        Studentas ausrine = new Studentas("Aušrinė", "Armonaitė");
-        Studentas gintare = new Studentas("Gintarė", "Skaistė");
-        Studentas arvydas = new Studentas("Arvydas", "Anušauskas");
-        Studentas simonasK = new Studentas("Simonas", "Kairys");
-        Studentas monika = new Studentas("Monika", "Navickienė");
-        Studentas marius = new Studentas("Marius", "Skuodis");
-        Studentas arunas = new Studentas("Arūnas", "Dulkys");
-        Studentas jurgita = new Studentas("Jurgita", "Šiugždinienė");
-        Studentas evelina = new Studentas("Evelina", "Dobrovolska");
-        Studentas gabrielius = new Studentas("Gabrielius", "Landsbergis");
-        Studentas agne = new Studentas("Agnė", "Bilotaitė");
-        Studentas kestutis = new Studentas("Kęstutis", "Navickas");
 
-        stud.add(simonasG);
-        stud.add(dainius);
-        stud.add(ausrine);
-        stud.add(gintare);
-        stud.add(arvydas);
-        stud.add(simonasK);
-        stud.add(monika);
-        stud.add(marius);
-        stud.add(arunas);
-        stud.add(jurgita);
-        stud.add(evelina);
-        stud.add(gabrielius);
-        stud.add(agne);
-        stud.add(kestutis);
+        stud.add(new Studentas("Simonas", "Gentvilas"));
+        stud.add(new Studentas("Dainius", "Kreivys"));
+        stud.add(new Studentas("Aušrinė", "Armonaitė"));
+        stud.add(new Studentas("Gintarė", "Skaistė"));
+        stud.add(new Studentas("Arvydas", "Anušauskas"));
+        stud.add(new Studentas("Simonas", "Kairys"));
+        stud.add(new Studentas("Monika", "Navickienė"));
+        stud.add(new Studentas("Marius", "Skuodis"));
+        stud.add(new Studentas("Arūnas", "Dulkys"));
+        stud.add(new Studentas("Jurgita", "Šiugždinienė"));
+        stud.add(new Studentas("Evelina", "Dobrovolska"));
+        stud.add(new Studentas("Gabrielius", "Landsbergis"));
+        stud.add(new Studentas("Agnė", "Bilotaitė"));
+        stud.add(new Studentas("Kęstutis", "Navickas"));
 
         for (int i = 0; i < stud.size(); i++) {
             for (int j = 1; j <= 5; j++) {
@@ -65,8 +51,7 @@ public class StudentaiND {
             for (int i = 0; i < stud.size(); i++) {
                 if (stud.get(i).getPavarde() == stud.get(i).arTuriPazymi(j)) {
                     map.put(j, stud.get(i).getPavarde());
-                    System.out.println(map.get(j));  
-                    
+                    System.out.println(map.get(j));                      
                 }                
             }                        
         }
