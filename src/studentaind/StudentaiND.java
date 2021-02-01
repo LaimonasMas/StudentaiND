@@ -19,7 +19,6 @@ public class StudentaiND {
     public static void main(String[] args) {
 
         ArrayList<Studentas> stud = new ArrayList();
-//        ArrayList<Studentas> studTuriPazymi = new ArrayList();
 
         Map map = new HashMap();
         Studentas simonasG = new Studentas("Simonas", "Gentvilas");
@@ -64,7 +63,6 @@ public class StudentaiND {
             System.out.println(j);
             for (int i = 0; i < stud.size(); i++) {
                 if (stud.get(i).getPavarde() == stud.get(i).arTuriPazymi(j)) {
-//                    studTuriPazymi.add(stud.get(i));
                     map.put(j, stud.get(i).getPavarde());
                     System.out.println(map.get(j));                    
                 }                
